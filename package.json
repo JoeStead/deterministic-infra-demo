@@ -1,0 +1,23 @@
+{
+    "name": "deterministic-infrastructure-demos",
+    "scripts": {
+        "test": "mocha tests/unit/* --require ts-node/register",
+        "aws-tests": "mocha tests/integration-aws/* --require ts-node/register"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.9",
+        "@types/mocha": "^7.0.1",
+        "@types/node": "^8.0.0",
+        "chai": "^4.2.0",
+        "mocha": "^7.0.1"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^1.0.0",
+        "@pulumi/awsx": "^0.18.10",
+        "@pulumi/pulumi": "^1.0.0",
+        "@types/aws-sdk": "^2.7.0",
+        "@types/chai-things": "0.0.34",
+        "aws-sdk": "^2.624.0",
+        "chai-things": "^0.2.0"
+    }
+}

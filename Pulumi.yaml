@@ -1,0 +1,3 @@
+name: deterministic-infrastructure-demos
+runtime: nodejs
+description: Demos for Deterministic Infrastructure
