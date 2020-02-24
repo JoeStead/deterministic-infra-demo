@@ -7,11 +7,10 @@ import {Output} from "@pulumi/pulumi";
 
 describe("#Bank Lambda Provisioning", async () => {
 
-    // const infra = await promise(coreStack.getOutput('core'));
     it("Should have created 5 lambdas", async () => {
         expect(bankLambdas.length).to.equal(5);
-
     });
+
     it("Should have given each lambda should have it's own role", async () => {
 
         const roles = await bankLambdas.map(async bl => await promise(bl.role));
