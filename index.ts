@@ -33,6 +33,7 @@ banksToTrack.forEach(bank => {
         runtime: aws.lambda.DotnetCore2d1Runtime,
         role: lambdaRole.arn,
         s3Bucket: infra.lambdaBucket,
+        memorySize: 256,
         ...lambdaConfig
     });
 

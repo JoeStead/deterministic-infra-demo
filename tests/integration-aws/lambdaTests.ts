@@ -37,6 +37,6 @@ describe("#AWS Tests", async () => {
         const functionMemorySizes = [...new Set(runningFunctions.map(f => f.MemorySize))];
 
         expect(functionMemorySizes.length).to.equal(1);
-        expect(functionMemorySizes[0]).to.equal(128);
+        expect(functionMemorySizes[0]).to.equal(256);
     });
 });
